@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.photogrid {
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header {
+  color: black;
+}
