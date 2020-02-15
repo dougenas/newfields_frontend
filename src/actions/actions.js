@@ -9,7 +9,9 @@ export const addVote = ({vote}) => (dispatch) => {
         body: JSON.stringify({ vote: vote })
     })
     .then(() => {
-        dispatch(push("/"));
+        dispatch(push("/votes"));
     })
     .catch(err => console.log(err))
 }
+
+export default addVote;

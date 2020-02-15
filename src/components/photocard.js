@@ -10,6 +10,7 @@ import Paper from '@material-ui/core/Paper';
 import Button from '@material-ui/core/Button';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import Grid from '@material-ui/core/Grid';
+import addVote from '../actions/actions'
 import '../index.css'
 
 const useStyles = makeStyles(theme => ({
@@ -20,6 +21,7 @@ const useStyles = makeStyles(theme => ({
       padding: theme.spacing(2),
       textAlign: 'center',
       color: theme.palette.text.secondary,
+      fontFamily: 'Montserrat',
     },
     button: {
         margin: theme.spacing(1),
@@ -45,6 +47,9 @@ export default function Photocard(){
         color="secondary"
         className={classes.button}
         startIcon={<FavoriteIcon />}
+        href="/votes"
+        target="_blank"
+        onClick={addVote}
       >Vote</Button>
         </Grid>
         <Grid item xs={6}>
@@ -57,6 +62,9 @@ export default function Photocard(){
         color="secondary"
         className={classes.button}
         startIcon={<FavoriteIcon />}
+        href="/votes"
+        target="_blank"
+        onClick={addVote}
       >Vote</Button>
         </Grid>
         <Grid item xs={6}>
@@ -69,6 +77,9 @@ export default function Photocard(){
         color="secondary"
         className={classes.button}
         startIcon={<FavoriteIcon />}
+        href="/votes"
+        target="_blank"
+        onClick={addVote}
       >Vote</Button>
         </Grid>
         <Grid item xs={6}>
@@ -82,6 +93,9 @@ export default function Photocard(){
         color="secondary"
         className={classes.button}
         startIcon={<FavoriteIcon />}
+        href="/votes"
+        target="_blank"
+        onClick={addVote}
       >Vote</Button>
         </Grid>
         
