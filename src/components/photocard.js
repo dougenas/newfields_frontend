@@ -48,7 +48,6 @@ export default function Photocard(){
         className={classes.button}
         startIcon={<FavoriteIcon />}
         href="/votes"
-        target="_blank"
         onClick={addVote}
       >Vote</Button>
         </Grid>
@@ -63,7 +62,6 @@ export default function Photocard(){
         className={classes.button}
         startIcon={<FavoriteIcon />}
         href="/votes"
-        target="_blank"
         onClick={addVote}
       >Vote</Button>
         </Grid>
@@ -78,7 +76,6 @@ export default function Photocard(){
         className={classes.button}
         startIcon={<FavoriteIcon />}
         href="/votes"
-        target="_blank"
         onClick={addVote}
       >Vote</Button>
         </Grid>
@@ -94,7 +91,6 @@ export default function Photocard(){
         className={classes.button}
         startIcon={<FavoriteIcon />}
         href="/votes"
-        target="_blank"
         onClick={addVote}
       >Vote</Button>
         </Grid>

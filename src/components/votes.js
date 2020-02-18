@@ -7,6 +7,8 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
+import Button from '@material-ui/core/Button';
+import getVote from '../actions/actions'
 
 const useStyles = makeStyles({
     root: {
@@ -23,16 +25,17 @@ function createData(name, voteNum) {
 }
 
 const rows = [
-  createData('Childrens Garden', 159),
-  createData('Interurban Linear Garden', 237),
-  createData('Gallery Connections', 262),
-  createData('Woodland Walk', 305),
+  createData('Childrens Garden', 159 /* {this.props.getVote} */),
+  createData('Interurban Linear Garden', 237 /* {this.props.getVote} */),
+  createData('Gallery Connections', 262 /* {this.props.getVote} */),
+  createData('Woodland Walk', 305 /* {this.props.getVote} */),
 ];
 
 export default function Votes() {
   const classes = useStyles();
 
   return (
+      <div>
     <TableContainer component={Paper}>
       <Table className={classes.root} aria-label="simple table">
         <TableHead>
@@ -53,5 +56,8 @@ export default function Votes() {
         </TableBody>
       </Table>
     </TableContainer>
+    <Button href="/">Go Back</Button>
+    </div>
+    
   );
 }
